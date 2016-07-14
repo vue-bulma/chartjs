@@ -1,0 +1,24 @@
+{
+  "name": "vue-bulma-chartjs",
+  "version": "0.0.0",
+  "description": "Chartjs component for Vue Bulma",
+  "main": "src/Chartjs.vue",
+  "devDependencies": {
+    "bulma": "0.1.0",
+    "vue": "1.0.26"
+  },
+  "scripts": {},
+  "repository": "git+https://github.com/vue-bulma/chartjs.git",
+  "keywords": [
+    "vue",
+    "bulma",
+    "vue-bulma",
+    "vue-bulma-component",
+    "vue-bulma-chartjs",
+    "chart.js",
+    "chartjs",
+    "chart"
+  ],
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT"
+}
