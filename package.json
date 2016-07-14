@@ -20,5 +20,8 @@
     "chart"
   ],
   "author": "Fangdun Cai <cfddream@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "2.2.0-rc.1"
+  }
 }
