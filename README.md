@@ -1,6 +1,6 @@
 # Chartjs
 
-Chartjs component is based on [chart.js](www.chartjs.org) for Vue Bulma.
+Chartjs component is based on [chart.js](http://www.chartjs.org) for Vue Bulma.
 
 ## Badges
 
