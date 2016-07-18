@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Chartjs component for Vue Bulma",
   "main": "src/Chartjs.vue",
-  "devDependencies": {
-    "bulma": "0.1.0",
-    "vue": "1.0.26"
+  "peerDependencies": {
+    "bulma": "^0.1.0",
+    "vue": "^1.0.26"
   },
   "scripts": {},
   "repository": "git+https://github.com/vue-bulma/chartjs.git",
