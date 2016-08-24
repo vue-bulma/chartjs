@@ -22,15 +22,11 @@ export default {
     data: {
       type: Object,
       required: true,
-      default () {
-        return {}
-      }
+      default: () => ({})
     },
     options: {
       type: Object,
-      default () {
-        return {}
-      }
+      default: () => ({})
     }
   },
 
