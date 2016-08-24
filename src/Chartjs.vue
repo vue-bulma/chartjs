@@ -35,8 +35,7 @@ export default {
   },
 
   mounted () {
-    const $el = this.$el
-    this.chart = new Chart($el, {
+    this.chart = new Chart(this.$el, {
       type: this.type,
       data: this.data,
       options: this.options
