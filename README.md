@@ -26,20 +26,20 @@ export default {
   data () {
     return {
       data: {
-	labels: ['Sleeping', 'Designing', 'Coding', 'Cycling'],
-	datasets: [{
-	  data: [20, 40, 5, 35],
-	  backgroundColor: [
+        labels: ['Sleeping', 'Designing', 'Coding', 'Cycling'],
+          datasets: [{
+          data: [20, 40, 5, 35],
+          backgroundColor: [
             '#1fc8db',
             '#fce473',
             '#42afe3',
             '#ed6c63',
             '#97cd76'
           ]
-	}]
+        }]
       },
       options: {
-	segmentShowStroke: false
+        segmentShowStroke: false
       }
     }
   }
@@ -57,4 +57,3 @@ export default {
 > [fundon.me](https://fundon.me) &nbsp;&middot;&nbsp;
 > GitHub [@fundon](https://github.com/fundon) &nbsp;&middot;&nbsp;
 > Twitter [@_fundon](https://twitter.com/_fundon)
-
