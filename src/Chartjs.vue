@@ -38,19 +38,32 @@ export default {
     })
   },
 
-  data () {
-    return {
-      chart: null
+  data () { return {
+    chart: null
+  }},
+
+  methods: {
+    resetChart () {
+      this.$nextTick(() => {
+        this.chart.destroy()
+        this.chart = new Chart(this.$el, {
+          type: this.type,
+          data: this.data,
+          options: this.options
+        })
+      })
     }
   },
 
   watch: {
-    data (val) {
-      this.$nextTick(() => {
-        // this.chart.data.datasets = val.datasets
-        // this.chart.data.labels = val.labels
-        this.chart.update()
-      })
+    type () {
+      this.resetChart()
+    },
+    data () {
+      this.chart.update()
+    },
+    options () {
+      this.resetChart()
     }
   }
 }
