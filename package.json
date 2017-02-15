@@ -1,6 +1,6 @@
 {
   "name": "vue-bulma-chartjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chartjs component for Vue Bulma",
   "main": "src/Chartjs.vue",
   "peerDependencies": {
