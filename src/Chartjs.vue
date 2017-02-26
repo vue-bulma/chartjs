@@ -15,9 +15,7 @@ export default {
     type: {
       type: String,
       required: true,
-      validator (value) {
-        return types.indexOf(value) > -1
-      }
+      validator: val => types.includes(value)
     },
     data: {
       type: Object,
@@ -38,9 +36,11 @@ export default {
     })
   },
 
-  data () { return {
-    chart: null
-  }},
+  data () {
+    return {
+      chart: null
+    }
+  },
 
   methods: {
     resetChart () {
