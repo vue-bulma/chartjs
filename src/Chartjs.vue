@@ -15,7 +15,7 @@ export default {
     type: {
       type: String,
       required: true,
-      validator: val => types.includes(value)
+      validator: val => types.includes(val)
     },
     data: {
       type: Object,
