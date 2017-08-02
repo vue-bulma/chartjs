@@ -5,7 +5,7 @@
 <script>
 import Chart from 'chart.js' // With moment.js
 
-const types = ['line', 'bar', 'radar', 'polarArea', 'pie', 'doughnut', 'bubble']
+const types = ['line', 'bar', 'radar', 'polarArea', 'pie', 'doughnut', 'bubble', 'scatter']
 
 export default {
 
