@@ -25,15 +25,15 @@ export default {
     options: {
       type: Object,
       default: () => ({})
+    },
+    plugins: {
+      type: [Object, Array],
+      default: () => ({})
     }
   },
 
   mounted () {
-    this.chart = new Chart(this.$el, {
-      type: this.type,
-      data: this.data,
-      options: this.options
-    })
+    this.resetChart()
   },
 
   data () {
@@ -44,33 +44,34 @@ export default {
 
   methods: {
     resetChart () {
-      this.$nextTick(() => {
+      if (this.chart)
         this.chart.destroy()
-        this.chart = new Chart(this.$el, {
-          type: this.type,
-          data: this.data,
-          options: this.options
-        })
+
+      this.chart = new Chart(this.$el, {
+        type: this.type,
+        data: this.data,
+        options: this.options,
+        plugins: this.plugins
       })
     }
   },
 
   watch: {
     type () {
-      this.resetChart()
+      this.$nextTick(() => this.resetChart())
     },
     data () {
       this.chart.update()
     },
     options () {
-      this.resetChart()
+      this.$nextTick(() => this.resetChart())
     }
   }
 }
 </script>
 
 <style lang="scss">
-canvas.chartjs {
-  max-width: 100%;
-}
+  canvas.chartjs {
+    max-width: 100%;
+  }
 </style>
